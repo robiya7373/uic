@@ -7,7 +7,7 @@ const Header = () => {
     <div className='header border-b  '>
       <Navbar/>
       <Hero/>
-      <img src={Mountain} alt=""  className=' mt-[-500px]'/>
+      <img src={Mountain} alt=""  className=' mt-[-570px]'/>
     </div>
   )
 }
