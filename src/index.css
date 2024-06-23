@@ -2,24 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.gradiant {
+  height: 900px;
+  background-color: #00000000; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(209, 133, 133, 0), #1e1e20);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+.gradient2 {
+  /* background-color: red; For browsers that do not support gradients */
+  background: linear-gradient(
+    to bottom right,
+    #00a795 -500px,
+    rgba(255, 0, 0, 0) 150px,
+    #00a795 500px
+  );
 }
 
+/* .gradient2 */
 
-.header {
-  height: 100vh;
-  background-image: url("../public/globe.webp");
-  background-position: center;
-  background-repeat: no-repeat;
+.hero .circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .logo {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: url("https://assets.codepen.io/7344750/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1657025755&width=512");
   background-size: cover;
- 
+  border-radius: 100vmax;
+  background-position: center;
+}
+
+.hero .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: consolas;
+  color: #fff;
+  font-size: 17px;
+  animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero .text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
 }

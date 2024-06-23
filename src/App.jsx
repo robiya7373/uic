@@ -1,18 +1,13 @@
-import About from "./components/About";
-import Header from "./components/Header";
-import Partners from "./components/Partners";
-import Portfolio from "./components/Portfolio";
-import Services from "./components/Services";
+import React from "react";
+import Home from "./pages/Home";
+import Header from "./components/header/Header";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
-      <About />
-      <Portfolio />
-      <Services />
-      <Partners />
-    </>
+      <Home />
+    </div>
   );
 };
 
