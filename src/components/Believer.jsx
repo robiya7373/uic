@@ -1,5 +1,5 @@
 import React from "react";
-import { Believe } from "../../../src/data/data.js";
+import { Believe } from "../data/data";
 import { motion } from "framer-motion";
 const Believer = () => {
   return (

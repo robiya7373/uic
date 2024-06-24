@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import logo from "../../../src/assets/hero.webp";
-import mount from "../../../src/assets/maoun.webp";
+import logo from "../../src/assets/hero.webp";
+import mount from "../../src/assets/maoun.webp";
 import { TiArrowRight } from "react-icons/ti";
 import { FiPhoneCall } from "react-icons/fi";
 import { motion } from "framer-motion";
-import ReactCurvedText from "react-curved-text";
+// import ReactCurvedText from "react-curved-text";
 import { FaPlay } from "react-icons/fa";
 const Hero = () => {
   useEffect(() => {
@@ -19,14 +19,14 @@ const Hero = () => {
   }, []);
   return (
     <div
-      className="h-[100vh] hero relative  "
+      className="h-[100vh] hero relative  mb-[300px] "
       style={{
         backgroundImage: `url(${logo})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
     >
-      <div className="w-[1200px] mx-auto px-5 flex z-[999] items-center relative  h-[100vh]">
+      <div className="w-[1200px] mx-auto px-5 flex z-[999] items-center relative h-[100vh]">
         <div className="w-[500px]">
           <h2 className="text-white lg:text-[48px] lg:leading-[58px] md:text-[40px] md:leading-[50px] sm:text-[32px] sm:leading-[40px] text-[28px] leading-[34px] pb-[15px] font-bold aos-init aos-animate">
             We offer digital solutions

@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { TiArrowRight } from "react-icons/ti";
-import aboutimg1 from "../../../src/assets/react.svg";
-import aboutimg2 from "../../../src/assets/aboutImg.svg";
-import icon from "../../../src/assets/aboutIcon.svg";
+import aboutimg1 from "../../src/assets/react.svg";
+import aboutimg2 from "../../src/assets/aboutImg.svg";
+import icon from "../../src/assets/aboutIcon.svg";
 import { motion } from "framer-motion";
-import { FaPlay } from "react-icons/fa";
+// import { FaPlay } from "react-icons/fa";
+
 const About = () => {
   useEffect(() => {
     const text = document.querySelector(".text");
@@ -19,7 +20,7 @@ const About = () => {
   }, []);
   return (
     <div className="h-[100vh]  bg-[#1e1e20]  ">
-      <div className="w-[1200px] mx-auto px-5 relative flex items-center h-full mt-[200px] justify-between gap-[100px]">
+      <div className="w-[1200px] mx-auto px-5 py-[400px] relative flex items-center h-[100vh] justify-between gap-[100px]">
         <motion.div
           whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
           transition={{ duration: 1 }}

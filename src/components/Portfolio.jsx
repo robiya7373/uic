@@ -1,5 +1,5 @@
 import React from "react";
-import { BiArrowToRight } from "react-icons/bi";
+// import { BiArrowToRight } from "react-icons/bi";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 
